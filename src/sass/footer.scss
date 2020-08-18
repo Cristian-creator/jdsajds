@@ -1,0 +1,104 @@
+.footer {
+    margin-top: 300px;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            width: 250px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .social {
+            p {
+                color: $dark-green;
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+            .icons {
+                &>i {
+                    font-size: 2.7rem;
+                    color: $dark-green;
+                }
+            }
+        }
+        .contact {
+            p {
+                margin: 0;
+                color: $dark-green;
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+            .list {
+                font-size: 1.1rem;
+                &>div i {
+                    color: $dark-green;
+                }
+            }
+        }
+        .address {
+            p {
+                margin: 0;
+                color: $dark-green;
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+            .list p {
+                color: black !important;
+                margin: 0;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 50px;
+        color: $dark-green;
+        span {
+            padding: 0px 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .footer .top .logo {
+        width: 200px;
+        height: 70px;
+    }
+    .footer .top .social p, .footer .top .contact p, .footer .top .address p {
+        font-size: 0.9rem;
+    }  
+    .footer .top .social .icons > i {
+        font-size: 2rem;
+    }
+    .footer .top .contact .list, .footer .top .address .list p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        margin-top: 100px;
+    }
+    .footer .top {
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        text-align: center;
+    }
+    .bottom {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer .top {
+        height: 350px;
+    }
+    .footer .bottom span {
+        font-size: 0.8rem;
+    }
+    .footer .top .contact .list, .footer .top .address .list p {
+        font-size: 0.8rem;
+    }
+    .footer .bottom {
+        margin-top: 20px;
+    }
+}

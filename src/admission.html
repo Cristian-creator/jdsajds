@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpack Starter with React</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="body-container admission">
+        <!-----      SPECIAL ANNOUNCEMENTS      ----->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  <h3 class="modal-title" id="exampleModalLabel">special announcements</h3>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi fuga laboriosam voluptas dolores architecto, ut a doloremque corporis quaerat sapiente deleniti illum eligendi porro unde!
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  <button> learn more </button>
+                  <div class="dont" data-dismiss="modal" aria-label="Close">
+                        Don't Show Again
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-------    HEADER   ------->
+        <div class="header">
+            <nav>
+                <div class="logo"> LOGO </div>
+                <ul>
+                    <li> inquire </li>
+                    <li> visit </li>
+                    <li> apply </li>
+                    <li> donate </li>
+                    <li class="li-search">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-times"></i>
+                        <div class="search">
+                            <input type="text" name="" id="">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <span> MENU </span>
+                        <button class="hamburger hamburger--criss-cross" type="button">
+                            <div class="inner">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="desktop-menu">
+                <div class="left">
+                    <h3> quick links <i class="fas fa-chevron-right"></i> </h3>
+                    <h3> about <i class="fas fa-chevron-right"></i> </h3>
+                    <h3> <a href="/admission"> admission </a> <i class="fas fa-chevron-right"></i> </h3>
+                    <h3> education <i class="fas fa-chevron-right"></i> </h3>
+                    <h3> experience <i class="fas fa-chevron-right"></i> </h3>
+                    <h3> our community <i class="fas fa-chevron-right"></i> </h3>
+                </div>
+                <span class="center"></span>
+               <ul class="right">
+                   <ul>
+                       <li> Lorem ipsum </li>
+                       <li> Lorem ipsum </li>
+                       <li> Lorem ipsum </li>
+                       <li> Lorem ipsum </li>
+                   </ul>
+                   <ul>
+                        <li> Lorem ipsum1 </li>
+                        <li> Lorem ipsum1 </li>
+                        <li> Lorem ipsum1 </li>
+                        <li> Lorem ipsum1 </li>
+                   </ul>
+                   <ul>
+                        <li> Lorem ipsum2 </li>
+                        <li> Lorem ipsum2 </li>
+                        <li> Lorem ipsum2 </li>
+                        <li> Lorem ipsum2 </li>
+                    </ul>
+                    <ul>
+                        <li> Lorem ipsum3 </li>
+                        <li> Lorem ipsum3 </li>
+                        <li> Lorem ipsum3 </li>
+                        <li> Lorem ipsum3 </li>
+                    </ul>
+                    <ul>
+                        <li> Lorem ipsum4 </li>
+                        <li> Lorem ipsum4 </li>
+                        <li> Lorem ipsum4 </li>
+                        <li> Lorem ipsum4 </li>
+                    </ul>
+                    <ul>
+                        <li> Lorem ipsum5 </li>
+                        <li> Lorem ipsum5 </li>
+                        <li> Lorem ipsum5 </li>
+                        <li> Lorem ipsum5 </li>
+                    </ul>
+               </ul>
+               <div class="bottom">
+                   <div class="">
+                        <i class="far fa-newspaper"></i>
+                        <span> News </span>
+                    </div>
+                    <div class="">
+                        <i class="far fa-calendar-alt"></i>
+                        <span> Calendar </span>
+                    </div>
+               </div>
+               <div class="bottom-line"></div>
+            </div>
+            <div class="header-mobile">
+                <div class="logo"> LOGO </div>
+                <div class="burger-container">
+                    <div class="burger burger-arrow burger-right">
+                        <div class="burger-lines"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!------      MOBILE MENU     ------>
+        <div class="mobile-menu">
+            <div class="search-section">
+                <input type="text">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="utils">
+                <p> inquire </p>
+                <p> visit </p>
+                <p> apply </p>
+                <p> donate </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          quick links
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam soluta impedit sint, magnam officiis cupiditate temporibus veniam tempore dolorem id, quisquam ut deserunt libero ratione necessitatibus repudiandae, accusantium amet!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          about
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam soluta impedit sint, magnam officiis cupiditate temporibus veniam tempore dolorem id, quisquam ut deserunt libero ratione necessitatibus repudiandae, accusantium amet!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          admission
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam soluta impedit sint, magnam officiis cupiditate temporibus veniam tempore dolorem id, quisquam ut deserunt libero ratione necessitatibus repudiandae, accusantium amet!
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="news-calendar">
+                <div class="">
+                    <i class="far fa-newspaper"></i>
+                    <span> News </span>
+                </div>
+                <div class="">
+                    <i class="far fa-calendar-alt"></i>
+                    <span> Calendar </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero"></div>
+        <!-----     ADMISSION    ----->
+        <div class="admission-container">
+            <div class="admission-main">
+                <h1> ADMISSION </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatem ipsa. Necessitatibus vitae cumque, totam esse suscipit, dolorem aliquid quos placeat maxime est sunt <span> aspernatur quisquam </span>, dolorum voluptate dignissimos odit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quas? Ducimus officiis, tenetur id aperiam consequatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatem ipsa. Necessitatibus vitae cumque, totam esse suscipit, dolorem aliquid quos placeat maxime est sunt aspernatur quisquam, dolorum <span> voluptate dignissimos odit </span>.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatem ipsa. Necessitatibus vitae cumque, totam esse suscipit, dolorem aliquid quos placeat maxime est sunt aspernatur quisquam, dolorum voluptate dignissimos odit.
+                </p>
+                <div class="cards">
+                    <div class="">
+                        <h3> APPLY </h3>
+                        <div class="content">Lorem ipsum dolor sit. </div>
+                    </div>
+                    <div class="">
+                        <h3> VISIT </h3>
+                        <div class="content">Lorem ipsum dolor sit. </div>
+                    </div>
+                    <div class="">
+                        <h3> TUITION & ADJUSTEMENTS </h3>
+                        <div class="content">Lorem ipsum dolor sit. </div>
+                    </div>
+                </div>
+                <h3> AT A GLANCE </h3>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, quo. </p>
+                <p> Lorem ipsum dolor <span> sit amet consectetur </span>, adipisicing elit. Qui impedit rerum tempora aut adipisci unde fuga expedita, beatae officia commodi nam harum sequi vel nostrum inventore neque provident itaque nulla laboriosam. Laboriosam ducimus ea obcaecati nulla iure, vero doloremque quam! </p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui impedit rerum tempora aut adipisci unde fuga expedita, beatae officia commodi nam harum sequi vel nostrum inventore neque provident itaque nulla laboriosam. Laboriosam ducimus ea obcaecati nulla iure, vero doloremque quam! </p>
+                <div class="shapes">
+                    <div>
+                        <h3> Founded 1962 </h3>
+                        <p> Lower School opened 1964 </p>
+                    </div>
+                    <div>
+                        <h3> 514 Students </h3>
+                        <p>Across 4 units and 3 campuses </p>
+                    </div>
+                    <div>
+                        <h3> 126-acre </h3>
+                        <p> Main campus </p>
+                    </div>
+                    <div>
+                        <h3> 9:1 </h3>
+                        <p> School average student to staff </p>
+                    </div>
+                    <div>
+                        <h3> Facilities </h3>
+                        <p> Include 14 classroom buildings </p>
+                    </div>
+                    <div>
+                        <h3> Arts </h3>
+                        <p> Art and music studios + a performing arts center </p>
+                    </div>
+                    <div>
+                        <h3> 2 </h3>
+                        <p> Libraries </p>
+                    </div>
+                    <div>
+                        <h3> Athletics </h3>
+                        <p> 2 athletic buildings + tennis courts + baseball, socces, and ultimate fields </p>
+                    </div>
+                    <div>
+                        <h3> $1.8 M </h3>
+                        <p> Total funds available for tuition adjustments last year </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="admission-second">
+                <ul class="utils">
+                    <li> Visit </li>
+                    <li> Apply </li>
+                    <li> Tuition & Adjustments </li>
+                </ul>
+                <div class="viewbook">
+                  <h3> Viewbook </h3>
+                  <p> Discover On Purpose at Carolina Friends School. </p>
+                  <button> BROWSE VIEWBOOK </button>
+                </div>
+                <div class="reflections">
+                    <div class="img"></div>
+                    <h6> REFLECTIIONS </h6>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat! </p>
+                    <button> READ MORE </button>
+                </div>
+                <div class="p-card">
+                    <div class="img"></div>
+                    <h4> Nancy Hayes </h4>
+                    <p> Director of Enrollment </p>
+                    <h5> <i class="fas fa-envelope"></i> nhayes@cfsnc.org </h5>
+                </div>
+                <div class="p-card">
+                  <div class="img"></div>
+                  <h4> Aubrey Whisler </h4>
+                  <p> Admission Assistant </p>
+                  <h5> <i class="fas fa-envelope"></i> awhisler@cfsnc.org </h5>
+              </div>
+            </div>
+          </div>
+            <div class="toggle">
+              <i class="fas fa-chevron-left"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+
+        <!-----     FOOTER    ----->
+        <div class="footer">
+            <div class="top">
+              <div class="logo"></div>
+              
+              <div class="social">
+                <p> SOCIAL </p>
+                <div class="icons">
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-youtube-square"></i>
+                  <i class="fab fa-invision"></i>
+                </div>
+              </div>
+           
+              <div class="contact">
+                <p> CONTACT </p>
+                <div class="list">
+                  <div class="">
+                    <i class="fas fa-phone-square-alt"></i>
+                    <span> 919.983.6602 </span>
+                  </div>
+                  <div class="">
+                    <i class="fas fa-fax"></i>
+                    <span> 919.383.6009 </span>
+                  </div>
+                  <div class="">
+                    <i class="fas fa-envelope"></i>
+                    <span> info@cfsnc.org </span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="address">
+                <p> ADDRESS </p>
+                <div class="list">
+                    <p> 4809 Friends School Road </p>
+                    <p> Durham, NC 27705 </p>
+                    <p> Directions </p> 
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <span> Sitemap </span>
+              <span> Privacy </span>
+              <span> Family Portal </span>
+            </div>
+          </div>  
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/ffcbcb44ec.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>

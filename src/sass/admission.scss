@@ -1,0 +1,195 @@
+.admission {
+    margin-top: 200px;
+    padding-bottom: 50px;
+    flex-direction: row-reverse;
+    .text {
+        .title {
+            h1 {
+                transform: scale(1.8) translateX(-65%);
+            }
+        }
+    }
+    .left-content {
+        height: 590px;
+        min-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .first, .second {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .first, .second {
+            & > .circle, & > .square {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $dark-green;
+                font-size: 1.3rem;
+            }
+        }
+
+        .first > .square { border: 16px solid $light-green; }
+        .first > .circle { transform: translateY(50%); border: 16px solid $orange; }
+        .second > .square { 
+            border: 16px solid $dark-green;
+            position: relative;
+            transition: all 0.3s linear;
+            cursor: pointer;
+            span {
+                transition: all 0.3s linear;    
+            }
+            .content {
+                position: absolute;
+                width: 130px;
+                text-align: center;
+                bottom: 0px;
+                font-size: 0.9rem;
+                color: white;
+                opacity: 0;
+                transition: all 0.3s linear;
+            }
+            &:hover {
+                background: $dark-green;
+                & > span {
+                    transform: translateY(-50px);
+                    color: white;
+                }
+                & > .content {
+                    opacity: 1;
+                }
+            }
+        }
+        .second > .circle { transform: translateY(-50%); border: 16px solid $light-blue; }
+        
+        .first > .square, .second > .square {
+            width: 230px;
+            height: 230px;
+        }
+        .first > .circle, .second > .circle {
+            width: 230px;
+            height: 230px;
+            border-radius: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 1001px) {
+    .admission .text .title h1 {
+        transform: translateX(-80%) scale(1.8);
+    }
+    .admission .left-content {
+        height: 520px;
+        min-width: 440px !important;
+    }
+    .admission .left-content .first > .square, .admission .left-content .second > .square {
+        height: 200px;
+        width: 200px;
+        font-size: 1rem;
+        .content {
+            font-size: 0.8rem;
+        }
+    }
+    .admission .left-content .first > .circle, .admission .left-content .second > .circle {
+        height: 200px;
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .admission .left-content {
+        height: 465px;
+        min-width: 390px !important;
+    }
+    .admission .left-content .first > .square, .admission .left-content .second > .square {
+        height: 180px;
+        width: 180px;
+        font-size: 1rem;
+        .content {
+            font-size: 0.8rem;
+        }
+    }
+    .admission .left-content .first > .circle, .admission .left-content .second > .circle {
+        height: 180px;
+        width: 180px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .admission {
+        flex-direction: column-reverse;
+    }
+    .admission .text .title h1 {
+        transform: translateX(0%) scale(1.9);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .admission .left-content {
+        height: 385px;
+        min-width: 340px !important;
+    }
+    .admission .left-content .first > .square, .admission .left-content .second > .square {
+        height: 150px;
+        width: 150px;
+        font-size: 0.9rem;
+        .content {
+            font-size: 0.8rem;
+            bottom: -20px;
+        }
+    }
+    .admission .left-content .first > .circle, .admission .left-content .second > .circle {
+        height: 150px;
+        width: 150px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 660px) {
+    .about-us .text {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .admission .left-content {
+        height: 320px;
+        min-width: 280px !important;
+    }
+    .admission .left-content .first > .square, .admission .left-content .second > .square {
+        height: 120px;
+        width: 120px;
+        font-size: 0.8rem;
+        border-width: 10px;
+    }
+    .admission .left-content .second > .square {
+        &:hover {
+            span:first-child {
+                margin-top: 30px;
+            }
+        }
+        .content {
+            width: 95px;
+            font-size: 0.6rem;
+            bottom: -20px;
+        }
+    }
+    .admission .left-content .first > .circle, .admission .left-content .second > .circle {
+        height: 120px;
+        width: 120px;
+        font-size: 0.8rem;
+        border-width: 10px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .admission .left-content {
+        margin-right: -30px;
+        justify-content: space-between;
+    }
+}

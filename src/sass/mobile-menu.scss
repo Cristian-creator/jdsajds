@@ -1,0 +1,148 @@
+@import './colors';
+
+.mobile-menu {
+    display: none;
+    z-index: 300;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    
+    padding-top: 150px;
+    // width: 100% !important;
+    width: 100% ;
+    min-height: 1000px;
+    height: 100vh;
+
+    background: $light-green;
+
+    .search-section {
+        position: relative;
+        input {
+            border: 1px solid black;
+            background: transparent;
+            padding: 5px 10px;
+        }
+        i {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+
+    .utils {
+        display: flex;
+        margin: 25px 0px;
+        width: 100%;
+        max-width: 500px;
+        justify-content: space-around;
+        p {
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    .accordion {
+        max-width: 300px;
+        &>.card {
+            min-width: 100% !important;
+            &:first-child {
+                border-top: 1px solid black;
+            }
+
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+            
+            .card-header {
+                // width: 100% !important;
+                width: 300px;
+                border: none !important;
+                background: transparent;
+                padding-left: 0px;
+                padding-right: 0px;
+                h2 {
+                    button {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: black;
+                        &:focus {
+                            outline: none !important;
+                        }
+                    }
+                }
+            }
+            .card-body {
+                width: 300px;
+                padding: 0px 20px;
+            }
+        }
+    }
+    .news-calendar {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .mobile-menu {
+        // display: flex;
+    }
+}
+
+@media screen and (min-width: 596px) and (max-width:768px) {
+    .mobile-menu {
+        width: 768px !important;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .mobile-menu .utils p {
+        font-size: 0.7rem;
+    }
+    .mobile-menu .accordion > .card  {
+        .card-header h2 button {
+            font-size: 0.8rem;
+        }
+        .card-body {
+            font-size: 0.7rem;
+            padding-bottom: 10px;
+        }
+        .card-header, .card-body {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .burger.burger-arrow.burger-right {
+        font-size: 0.5rem;
+    }
+    .header .header-mobile .logo  {
+        font-size: 2rem;
+    }
+    .mobile-menu .utils p {
+        font-size: 0.6rem;
+    }
+    .mobile-menu .search-section input {
+        width: 200px;
+        padding: 5px;
+    }
+    .mobile-menu .accordion > .card  {
+        .card-header h2 button {
+            font-size: 0.7rem;
+        }
+        .card-body {
+            font-size: 0.6rem;
+            padding-bottom: 10px;
+        }
+        .card-header, .card-body {
+            width: 190px;
+        }
+    }
+    .mobile-menu .news-calendar > div  {
+        font-size: 0.8rem;
+    }
+}

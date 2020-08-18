@@ -1,0 +1,20 @@
+// @import "~bootstrap/scss/bootstrap";
+// @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+@import './html.scss';
+@import './specialAnn.scss';
+@import './header.scss';
+@import "~delicious-hamburgers/scss/base";
+@import "~delicious-hamburgers/scss/animations/criss-cross";
+@import '../BurgerArrow/dist/styles.css';
+@import './mobile-menu.scss';
+@import './about-us.scss';
+@import './admission.scss';
+@import './learn.scss';
+@import './campus.scss';
+@import './footer.scss';
+
+///     ADMISSION PAGE    ///
+@import './admission/hero.scss';
+@import './admission/container.scss';
