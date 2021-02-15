@@ -1,0 +1,326 @@
+.header {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .logo {
+  width: 250px;
+  height: 120px;
+  border: 1px solid black;
+}
+
+.header nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.header nav > ul li {
+  text-transform: uppercase;
+  color: #006456;
+  padding: 10px;
+  margin: 0px 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header nav > ul li:hover {
+  color: #F05A22;
+}
+
+.header nav > ul .li-search {
+  position: relative;
+}
+
+.header nav > ul .li-search .fa-search {
+  display: block;
+}
+
+.header nav > ul .li-search .fa-times {
+  display: none;
+}
+
+.header nav > ul .li-search .fa-search, .header nav > ul .li-search .fa-times {
+  z-index: 200 !important;
+  cursor: pointer;
+}
+
+.header nav > ul .li-search > .search {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  margin-right: 30px;
+}
+
+.header nav > ul .li-search > .search input {
+  width: 350px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
+
+.header nav > ul .li-search > .search i {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 15px;
+  right: 20px;
+}
+
+.header nav > ul .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #006456;
+  padding: 20px 25px;
+  z-index: 100;
+}
+
+.header nav > ul .menu span {
+  margin-right: 5px;
+}
+
+.header nav > ul .menu .hamburger .inner .bar {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #006456 !important;
+}
+
+.header nav > ul .menu .hamburger.active > .inner:nth-child(1)::after, .header nav > ul .menu .hamburger.active > .inner:nth-child(1)::before {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header nav > ul .menu:hover {
+  background: #006456;
+  color: white;
+}
+
+.header nav > ul .menu:hover .hamburger .inner > span {
+  background: white !important;
+  color: white !important;
+}
+
+.header nav > ul .menu:hover .hamburger.active > .inner:nth-child(1)::after, .header nav > ul .menu:hover .hamburger.active > .inner:nth-child(1)::before {
+  background: white !important;
+}
+
+.header .desktop-menu {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  opacity: 0;
+  z-index: 200;
+  background: white;
+}
+
+.header .desktop-menu .left {
+  text-transform: uppercase;
+  color: #006456;
+}
+
+.header .desktop-menu .left h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  padding: 10px 10px 10px 0px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header .desktop-menu .left h3 a {
+  color: #006456;
+}
+
+.header .desktop-menu .left h3 i {
+  opacity: 0;
+  font-size: 1.3rem;
+  padding: 0px 20px;
+}
+
+.header .desktop-menu .center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  width: 2px;
+  background: #006456;
+}
+
+.header .desktop-menu .right {
+  margin: 0 auto;
+}
+
+.header .desktop-menu .right > ul {
+  width: 100%;
+  list-style-type: none;
+  display: none;
+}
+
+.header .desktop-menu .right > ul li {
+  color: #006456;
+  font-size: 1.3rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.header .desktop-menu .right > ul li:hover {
+  color: #F05A22;
+}
+
+.header .desktop-menu .bottom {
+  position: absolute;
+  bottom: -150px;
+}
+
+.header .desktop-menu .bottom > div {
+  padding: 10px 15px 10px 0px;
+  font-size: 1.1rem;
+  color: #006456;
+  cursor: pointer;
+}
+
+.header .desktop-menu .bottom > div:hover {
+  color: #F05A22;
+}
+
+.header .desktop-menu .bottom-line {
+  display: block;
+  position: absolute;
+  bottom: -200px;
+  left: -100px;
+  height: 5px;
+  width: calc(100% + 200px);
+  background: #F05A22;
+}
+
+.header .header-mobile {
+  max-width: 100%;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.header .header-mobile .logo {
+  font-size: 3rem;
+  z-index: 400;
+}
+
+.header .header-mobile .burger-container {
+  z-index: 400;
+  cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header .header-mobile .burger-container .burger .burger-lines, .header .header-mobile .burger-container .burger .burger-lines:after, .header .header-mobile .burger-container .burger .burger-lines:before {
+  background-color: #006456;
+}
+
+.header .quote {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.header .quote h1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 10rem;
+}
+
+.activeClick {
+  color: red;
+}
+
+.activeClick i {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .header .desktop-menu .bottom-line {
+    left: 0;
+    right: 0;
+    width: calc(100%);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header .quote h1 {
+    font-size: 8rem;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header nav > ul .li-search > .search input {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header nav .logo {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header nav, .header .desktop-menu {
+    display: none;
+  }
+  .header .header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=header.css.map */

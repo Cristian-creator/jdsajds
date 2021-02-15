@@ -1,0 +1,193 @@
+.wrapper {
+  height: 74vh;
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us .text {
+  width: 50%;
+}
+
+.about-us .text .title {
+  position: relative;
+}
+
+.about-us .text .title h1 {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  -webkit-transform: scale(1.7) translateX(25px);
+          transform: scale(1.7) translateX(25px);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -100;
+}
+
+.about-us .text .title h3 {
+  color: #006456;
+  font-size: 4rem;
+}
+
+.about-us .text p {
+  margin: 30px 0px;
+  font-size: 1.3rem;
+}
+
+.about-us .text button {
+  padding: 10px 25px;
+  border: none;
+  background: #006456;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.about-us .image-container {
+  display: block;
+  overflow-x: hidden;
+  min-width: 600px;
+  height: 600px;
+}
+
+.about-us .image-container .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 100%;
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+}
+
+@media screen and (max-width: 1600px) {
+  .about-us .text .title h1, .about-us .text .title h3 {
+    font-size: 3.3rem;
+  }
+  .about-us .text p {
+    font-size: 1rem;
+    margin: 20px 0px;
+  }
+  .about-us .text button {
+    padding: 8px 20px;
+    font-size: 0.7rem;
+  }
+  .about-us .image-container {
+    height: 500px;
+    min-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .about-us .text .title h1, .about-us .text .title h3 {
+    font-size: 3rem;
+  }
+  .about-us .text p {
+    font-size: 0.8rem;
+    margin: 20px 0px;
+  }
+  .about-us .image-container {
+    height: 400px;
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-us {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .about-us .text .title h1 {
+    word-spacing: 0px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .about-us .text .title h1, .about-us .text .title h3 {
+    font-size: 2.5rem;
+  }
+  .about-us .text p {
+    font-size: 0.7rem;
+  }
+  .about-us .text button {
+    padding: 7px 17px;
+    font-size: 0.65rem;
+  }
+  .about-us .image-container {
+    min-width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .about-us {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .about-us .text {
+    width: 60%;
+  }
+  .about-us {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 95%;
+    position: relative;
+  }
+  .about-us .image-container .image {
+    opacity: 0.2;
+  }
+  .about-us .image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .about-us .text {
+    width: 70%;
+  }
+  .about-us .text .title h1, .about-us .text .title h3 {
+    font-size: 1.8rem;
+  }
+  .about-us .text p {
+    font-size: 0.6rem;
+  }
+  .about-us .text button {
+    font-size: 0.5rem;
+    padding: 5px 12px;
+  }
+  .about-us .image-container {
+    min-width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .about-us .image-container {
+    display: none;
+  }
+  .about-us .text {
+    width: 100%;
+  }
+  .about-us .image-container {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=about-us.css.map */

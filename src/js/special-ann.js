@@ -1,6 +1,6 @@
 const specialAnn = () => {
     $(window).on('load',function(){
-        // $('#exampleModal').modal('show');
+        $('#exampleModal').modal('show');
     });
 }
 

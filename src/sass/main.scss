@@ -5,8 +5,8 @@
 @import './html.scss';
 @import './specialAnn.scss';
 @import './header.scss';
-@import "~delicious-hamburgers/scss/base";
-@import "~delicious-hamburgers/scss/animations/criss-cross";
+@import "../../node_modules/delicious-hamburgers/scss/base"; //  delicious-hamburgers/scss/base
+@import "../../node_modules/delicious-hamburgers/scss/animations/criss-cross"; // delicious-hamburgers/scss/animations/criss-cross
 @import '../BurgerArrow/dist/styles.css';
 @import './mobile-menu.scss';
 @import './about-us.scss';
@@ -14,6 +14,7 @@
 @import './learn.scss';
 @import './campus.scss';
 @import './footer.scss';
+@import './colors';
 
 ///     ADMISSION PAGE    ///
 @import './admission/hero.scss';

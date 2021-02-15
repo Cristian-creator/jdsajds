@@ -1,0 +1,72 @@
+#exampleModal .modal-dialog .modal-content {
+  border: 1px solid #006456;
+  border-radius: 0px;
+  padding: 20px;
+  max-width: 350px;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-body {
+  position: relative;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-body button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #006456;
+  outline: none;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-body h3 {
+  color: #006456;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-body p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-footer {
+  border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px 12px;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-footer > button {
+  margin: unset;
+  padding: 10px 30px;
+  border: 1px solid #006456;
+  background: #006456;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-footer .dont {
+  color: #006456;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=specialAnn.css.map */
